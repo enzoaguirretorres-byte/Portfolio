@@ -3,7 +3,7 @@ const slidePaths = {
   rotary: Array.from({ length: 12 }, (_, i) => `assets/slides/rotary/slide-${String(i + 1).padStart(2, "0")}.webp`),
   carriage: ["assets/slides/carriage/slide-01.webp"],
   blood: Array.from({ length: 16 }, (_, i) => `assets/slides/blood/slide-${String(i + 1).padStart(2, "0")}.webp`),
-  atat: Array.from({ length: 7 }, (_, i) => `assets/slides/atat/slide-${String(i + 1).padStart(2, "0")}.webp`)
+  atat: Array.from({ length: 6 }, (_, i) => `assets/slides/atat/slide-${String(i + 1).padStart(2, "0")}.webp`)
 };
 
 const projects = {
