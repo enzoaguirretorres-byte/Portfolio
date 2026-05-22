@@ -55,7 +55,7 @@
       <div class="section-heading reveal">
         <p class="eyebrow">Featured Projects</p>
         <h2>Selected mechanical engineering work</h2>
-        <p>Projects are written as portfolio case studies: what the problem was, what I built, what tools I used, and what engineering decisions mattered.</p>
+        <p>Projects are written as portfolio case studies. Open any card to view an expandable slide gallery, project images, engineering focus, tools, and downloadable PowerPoint files.</p>
       </div>
 
       <div class="project-grid">
@@ -66,7 +66,7 @@
             <h3>Adaptive Elbow Rehabilitation Device</h3>
             <p>Wearable rehabilitation prototype that uses a motorized reel system to provide adjustable resistance for wrist and finger extension exercises.</p>
             <div class="tags"><span>Creo</span><span>FEA</span><span>ESP32</span><span>CAN Bus</span></div>
-            <button class="text-link" type="button">View case study →</button>
+            <button class="text-link" type="button">View case study + slides →</button>
           </div>
         </article>
 
@@ -77,7 +77,7 @@
             <h3>Rotary Engine Air-Pump Prototype</h3>
             <p>Scaled Wankel-style model used to compare mechanical input against air-based pressure and flow output using sensors and MATLAB analysis.</p>
             <div class="tags"><span>CAD</span><span>3D Printing</span><span>MATLAB</span><span>Testing</span></div>
-            <button class="text-link" type="button">View case study →</button>
+            <button class="text-link" type="button">View case study + slides →</button>
           </div>
         </article>
 
@@ -92,7 +92,7 @@
             <h3>Performance Brake Assembly Design</h3>
             <p>Sport-sedan brake assembly concept with fixed caliper geometry, piston layout, pad packaging, and structural validation around clamp loading.</p>
             <div class="tags"><span>SolidWorks</span><span>FEA</span><span>GD&T</span><span>Packaging</span></div>
-            <button class="text-link" type="button">View case study →</button>
+            <button class="text-link" type="button">View case study + slides →</button>
           </div>
         </article>
 
@@ -103,7 +103,7 @@
             <h3>Delivery Carriage System</h3>
             <p>Food delivery storage concept designed to reduce spills through a lockable insulated box, vehicle mounting features, and internal securing mesh.</p>
             <div class="tags"><span>Concept Design</span><span>Mechanisms</span><span>DFM</span><span>CAD</span></div>
-            <button class="text-link" type="button">View case study →</button>
+            <button class="text-link" type="button">View case study + slides →</button>
           </div>
         </article>
 
@@ -114,7 +114,7 @@
             <h3>Blood Circulation Heat Transfer Analysis</h3>
             <p>Thermal-fluid model comparing theoretical, SolidWorks, and ANSYS results for blood flow through a simplified vein under different environments.</p>
             <div class="tags"><span>SolidWorks</span><span>ANSYS</span><span>Heat Transfer</span><span>CFD</span></div>
-            <button class="text-link" type="button">View case study →</button>
+            <button class="text-link" type="button">View case study + slides →</button>
           </div>
         </article>
 
@@ -125,7 +125,7 @@
             <h3>All Terrain Armored Transport Toy</h3>
             <p>3D-printed walking toy controlled through the Blynk app, integrating servo motion, gearing, linkages, magnets, and modular printed assemblies.</p>
             <div class="tags"><span>3D Printing</span><span>Servos</span><span>Blynk</span><span>Assembly</span></div>
-            <button class="text-link" type="button">View case study →</button>
+            <button class="text-link" type="button">View case study + slides →</button>
           </div>
         </article>
       </div>
@@ -222,6 +222,25 @@
       <p class="project-type" id="modal-type"></p>
       <h2 id="modal-title"></h2>
       <p id="modal-summary"></p>
+
+      <div class="modal-media" id="modal-media" hidden>
+        <div class="media-header">
+          <div>
+            <h3>Project visuals</h3>
+            <p id="modal-media-caption">Click the main image to expand it.</p>
+          </div>
+          <div class="media-actions">
+            <a class="btn compact secondary" id="modal-deck-link" href="#" target="_blank" rel="noopener">Download PowerPoint</a>
+            <a class="btn compact ghost" id="modal-image-link" href="#" target="_blank" rel="noopener">Open image</a>
+          </div>
+        </div>
+        <button class="image-stage" id="modal-image-button" type="button" aria-label="Expand current project image">
+          <img id="modal-image" src="" alt="" />
+          <span class="expand-hint">Click to expand</span>
+        </button>
+        <div class="thumbnail-strip" id="modal-thumbnails" aria-label="Project image thumbnails"></div>
+      </div>
+
       <div class="modal-content-grid">
         <div>
           <h3>Engineering focus</h3>
@@ -237,6 +256,15 @@
         <p id="modal-result"></p>
       </div>
     </div>
+  </div>
+
+  <div class="lightbox" id="image-lightbox" aria-hidden="true" role="dialog" aria-label="Expanded project image">
+    <div class="lightbox-backdrop" data-close-lightbox></div>
+    <button class="lightbox-close" type="button" data-close-lightbox aria-label="Close expanded image">×</button>
+    <button class="lightbox-nav prev" type="button" data-lightbox-prev aria-label="Previous image">‹</button>
+    <img id="lightbox-image" src="" alt="" />
+    <button class="lightbox-nav next" type="button" data-lightbox-next aria-label="Next image">›</button>
+    <p id="lightbox-caption"></p>
   </div>
 
   <footer>
