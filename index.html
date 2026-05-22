@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mechanical engineering portfolio for Enzo Aguirre, focused on product design, electromechanical systems, CAD, FEA, prototyping, and testing." />
+  <title>Enzo Aguirre | Mechanical Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Home">EA</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <nav id="nav-menu" class="nav-menu" aria-label="Primary navigation">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Mechanical Design • Product Development • Prototyping</p>
+        <h1>Enzo Aguirre</h1>
+        <p class="hero-subtitle">Mechanical engineering graduate focused on turning concepts into working prototypes through CAD, FEA, fabrication, testing, and electromechanical integration.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="assets/docs/Enzo_Aguirre_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+      </div>
+      <aside class="hero-card reveal delay-1" aria-label="Portfolio highlights">
+        <div>
+          <span class="metric">6</span>
+          <span class="metric-label">featured engineering projects</span>
+        </div>
+        <div>
+          <span class="metric">CAD + FEA</span>
+          <span class="metric-label">from design intent to validation</span>
+        </div>
+        <div>
+          <span class="metric">Hands-on</span>
+          <span class="metric-label">3D printing, testing, controls, fabrication</span>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects" class="section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Featured Projects</p>
+        <h2>Selected mechanical engineering work</h2>
+        <p>Projects are written as portfolio case studies: what the problem was, what I built, what tools I used, and what engineering decisions mattered.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal" data-project="aer">
+          <img src="assets/images/aer-rehabilitation.webp" alt="Adaptive Elbow Rehabilitation Device presentation thumbnail" loading="lazy" />
+          <div class="project-card-body">
+            <p class="project-type">Capstone • Electromechanical Medical Device</p>
+            <h3>Adaptive Elbow Rehabilitation Device</h3>
+            <p>Wearable rehabilitation prototype that uses a motorized reel system to provide adjustable resistance for wrist and finger extension exercises.</p>
+            <div class="tags"><span>Creo</span><span>FEA</span><span>ESP32</span><span>CAN Bus</span></div>
+            <button class="text-link" type="button">View case study →</button>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-1" data-project="rotary">
+          <img src="assets/images/rotary-engine.webp" alt="Rotary engine prototype presentation thumbnail" loading="lazy" />
+          <div class="project-card-body">
+            <p class="project-type">Fluid Mechanics • Prototype Testing</p>
+            <h3>Rotary Engine Air-Pump Prototype</h3>
+            <p>Scaled Wankel-style model used to compare mechanical input against air-based pressure and flow output using sensors and MATLAB analysis.</p>
+            <div class="tags"><span>CAD</span><span>3D Printing</span><span>MATLAB</span><span>Testing</span></div>
+            <button class="text-link" type="button">View case study →</button>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-2" data-project="brake">
+          <div class="placeholder-visual brake-visual" aria-hidden="true">
+            <span>340 mm Rotor</span>
+            <span>Fixed Multi-Piston Caliper</span>
+            <span>Clamp Load FEA</span>
+          </div>
+          <div class="project-card-body">
+            <p class="project-type">Mechanical Design • Structural Analysis</p>
+            <h3>Performance Brake Assembly Design</h3>
+            <p>Sport-sedan brake assembly concept with fixed caliper geometry, piston layout, pad packaging, and structural validation around clamp loading.</p>
+            <div class="tags"><span>SolidWorks</span><span>FEA</span><span>GD&T</span><span>Packaging</span></div>
+            <button class="text-link" type="button">View case study →</button>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-project="carriage">
+          <img src="assets/images/delivery-carriage.webp" alt="Delivery carriage system presentation thumbnail" loading="lazy" />
+          <div class="project-card-body">
+            <p class="project-type">Product Design • Concept Development</p>
+            <h3>Delivery Carriage System</h3>
+            <p>Food delivery storage concept designed to reduce spills through a lockable insulated box, vehicle mounting features, and internal securing mesh.</p>
+            <div class="tags"><span>Concept Design</span><span>Mechanisms</span><span>DFM</span><span>CAD</span></div>
+            <button class="text-link" type="button">View case study →</button>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-1" data-project="blood">
+          <img src="assets/images/blood-circulation.webp" alt="Blood circulation analysis presentation thumbnail" loading="lazy" />
+          <div class="project-card-body">
+            <p class="project-type">Heat Transfer • Simulation</p>
+            <h3>Blood Circulation Heat Transfer Analysis</h3>
+            <p>Thermal-fluid model comparing theoretical, SolidWorks, and ANSYS results for blood flow through a simplified vein under different environments.</p>
+            <div class="tags"><span>SolidWorks</span><span>ANSYS</span><span>Heat Transfer</span><span>CFD</span></div>
+            <button class="text-link" type="button">View case study →</button>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-2" data-project="atat">
+          <img src="assets/images/atat-toy.webp" alt="AT-AT mechatronic toy presentation thumbnail" loading="lazy" />
+          <div class="project-card-body">
+            <p class="project-type">Mechatronics • Consumer Product Prototype</p>
+            <h3>All Terrain Armored Transport Toy</h3>
+            <p>3D-printed walking toy controlled through the Blynk app, integrating servo motion, gearing, linkages, magnets, and modular printed assemblies.</p>
+            <div class="tags"><span>3D Printing</span><span>Servos</span><span>Blynk</span><span>Assembly</span></div>
+            <button class="text-link" type="button">View case study →</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section-shell split-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About Me</p>
+        <h2>Engineer with a build-first mindset.</h2>
+      </div>
+      <div class="about-copy reveal delay-1">
+        <p>I’m a mechanical engineering graduate from Purdue University with a strong interest in product development, mechanical design, electromechanical systems, and automotive-style hardware. I like projects where the final result is not just a model, but something that can be built, tested, adjusted, and improved.</p>
+        <p>My work usually sits at the intersection of CAD, prototyping, structural analysis, and testing. I’ve designed mechanisms and structures, supported EV and ICE kart platforms, integrated motors and controls into prototypes, and used FEA or sensor data to make design decisions less subjective.</p>
+        <p>I’m especially interested in roles where I can contribute to real hardware: CAD modeling, tolerance-aware design, testing, manufacturing support, and hands-on iteration with cross-functional teams.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Technical Skills</p>
+        <h2>Tools and strengths</h2>
+      </div>
+      <div class="skills-grid reveal delay-1">
+        <div class="skill-card">
+          <h3>CAD / Design</h3>
+          <p>Creo Parametric, SolidWorks, Siemens NX, Fusion 360, mechanical design, product development, tolerance awareness, GD&T, technical drawings.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Analysis / Testing</h3>
+          <p>FEA, MATLAB, Excel, ANSYS/SolidWorks simulation workflows, sensor-based testing, load cases, stress concentrations, deformation review.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Prototyping / Manufacturing</h3>
+          <p>3D printing, CNC, woodworking, fabrication, assembly, design for manufacturability, fitment checks, iterative prototype development.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Controls / Electronics</h3>
+          <p>ESP32, CAN bus motor control, Arduino-style prototyping, app-integrated controls, electromechanical system integration, wiring/debugging.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Applied engineering background</h2>
+      </div>
+      <div class="timeline reveal delay-1">
+        <article>
+          <span class="timeline-date">2023–2025</span>
+          <h3>Powertrain Designer — Purdue ASME EV Race Kart Team</h3>
+          <p>Designed drivetrain and supporting mechanical components for EV and ICE kart platforms while considering torque loads, packaging, manufacturability, durability, and serviceability.</p>
+        </article>
+        <article>
+          <span class="timeline-date">May 2023–Jul 2023</span>
+          <h3>Junior Supervisor Intern — AAC Mining</h3>
+          <p>Worked across maintenance, development, and supply chain operations in an active mining environment, coordinating with equipment support teams and supporting machine readiness.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="section-shell resume-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Resume</p>
+        <h2>Resume preview</h2>
+        <p>Embed may not display on every browser. Use the download button if needed.</p>
+      </div>
+      <div class="resume-frame reveal delay-1">
+        <object data="assets/docs/Enzo_Aguirre_Resume.pdf" type="application/pdf">
+          <p>Your browser does not support embedded PDFs. <a href="assets/docs/Enzo_Aguirre_Resume.pdf">Download the resume here.</a></p>
+        </object>
+      </div>
+      <a class="btn primary resume-download" href="assets/docs/Enzo_Aguirre_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+    </section>
+
+    <section id="contact" class="section-shell contact-section">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect.</h2>
+        <p>I’m open to mechanical design, product development, CAD, testing, prototyping, and electromechanical hardware opportunities.</p>
+        <div class="contact-links">
+          <a href="mailto:enzo.aguirretorres@gmail.com">enzo.aguirretorres@gmail.com</a>
+          <a href="tel:+19546483650">+1 (954) 648-3650</a>
+          <a href="#" title="Replace this placeholder with your LinkedIn URL">LinkedIn URL placeholder</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close case study">×</button>
+      <p class="project-type" id="modal-type"></p>
+      <h2 id="modal-title"></h2>
+      <p id="modal-summary"></p>
+      <div class="modal-content-grid">
+        <div>
+          <h3>Engineering focus</h3>
+          <ul id="modal-focus"></ul>
+        </div>
+        <div>
+          <h3>Tools / methods</h3>
+          <ul id="modal-tools"></ul>
+        </div>
+      </div>
+      <div class="modal-outcome">
+        <h3>Result</h3>
+        <p id="modal-result"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Enzo Aguirre. Built for GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
