@@ -51,7 +51,7 @@ const projects = {
     ],
     tools: ["SolidWorks", "FEA", "Mechanical packaging", "Load-case setup", "GD&T awareness"],
     result: "Created a portfolio-level brake design that demonstrates CAD modeling, structural simulation setup, and engineering reasoning around high-load mechanical hardware.",
-    images: [],
+    images: performance_brake_caliper.webp,
     deck: "",
     mediaLabel: "Brake assembly visuals"
   },
