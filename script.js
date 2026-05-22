@@ -3,7 +3,8 @@ const slidePaths = {
   rotary: Array.from({ length: 12 }, (_, i) => `assets/slides/rotary/slide-${String(i + 1).padStart(2, "0")}.webp`),
   carriage: ["assets/slides/carriage/slide-01.webp"],
   blood: Array.from({ length: 16 }, (_, i) => `assets/slides/blood/slide-${String(i + 1).padStart(2, "0")}.webp`),
-  atat: Array.from({ length: 6 }, (_, i) => `assets/slides/atat/slide-${String(i + 1).padStart(2, "0")}.webp`)
+  atat: Array.from({ length: 6 }, (_, i) => `assets/slides/atat/slide-${String(i + 1).padStart(2, "0")}.webp`),
+  brake: ["assets/images/performance_brake_caliper.webp"]
 };
 
 const projects = {
@@ -51,7 +52,7 @@ const projects = {
     ],
     tools: ["SolidWorks", "FEA", "Mechanical packaging", "Load-case setup", "GD&T awareness"],
     result: "Created a portfolio-level brake design that demonstrates CAD modeling, structural simulation setup, and engineering reasoning around high-load mechanical hardware.",
-    images: performance_brake_caliper.webp,
+    images: slidePaths.brake,
     deck: "",
     mediaLabel: "Brake assembly visuals"
   },
